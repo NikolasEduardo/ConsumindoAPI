@@ -15,7 +15,7 @@ var valor4 = 0;
 var valor5 = 0;
 var valor6 = 0;
 
-fetch("../json/meme.json")
+fetch('json/meme.json')
     .then(response => {
         return response.json();
     })
@@ -33,7 +33,7 @@ fetch("../json/meme.json")
             escrever.innerHTML = ("Nome: " + jsondata.pessoa1.nome + '<br> Profissão: ' + jsondata.pessoa1.profissao + ' <br> Idade: ' + jsondata.pessoa1.idade + " Anos." + ' <br> Foto: ');
         }));
 
-fetch("../json/meme.json")
+fetch('json/meme.json')
     .then(response => {
         return response.json();
     })
@@ -52,7 +52,7 @@ fetch("../json/meme.json")
             a.href = jsondata.pessoa2.link;
         }));
 
-fetch("../json/meme.json")
+fetch('json/meme.json')
     .then(response => {
         return response.json();
     })
@@ -70,7 +70,7 @@ fetch("../json/meme.json")
             escrever.innerHTML = ("Nome: " + jsondata.pessoa3.nome + '<br> Profissão: ' + jsondata.pessoa3.profissao + ' <br> Idade: ' + jsondata.pessoa3.idade + " Anos." + ' <br> Foto: ');
         }));
 
-fetch("../json/meme.json")
+fetch('json/meme.json')
     .then(response => {
         return response.json();
     })
@@ -88,7 +88,7 @@ fetch("../json/meme.json")
             escrever.innerHTML = ("Nome: " + jsondata.pessoa4.nome + '<br> Profissão: ' + jsondata.pessoa4.profissao + ' <br> Idade: ' + jsondata.pessoa4.idade + " Anos." + ' <br> Foto: ');
         }));
 
-fetch("../json/meme.json")
+fetch('json/meme.json')
     .then(response => {
         return response.json();
     })
@@ -106,7 +106,7 @@ fetch("../json/meme.json")
             escrever.innerHTML = ("Nome: " + jsondata.pessoa5.nome + '<br> Profissão: ' + jsondata.pessoa5.profissao + ' <br> Idade: ' + jsondata.pessoa5.idade + " Anos." + ' <br> Foto: ');
         }));
 
-fetch("../json/meme.json")
+fetch('json/meme.json')
     .then(response => {
         return response.json();
     })
