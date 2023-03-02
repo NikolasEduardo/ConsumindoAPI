@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="icon" type="imagem/png" href="icones/formulario.png" />
+    <link rel="stylesheet" href="css/rolagemsite.css">
+</head>
+
+<body>
+    <div id="formulario">
+        <p>FAÇA SEU FORMULÁRIO</p>
+        <label for="">Nome: </label>
+        <input type="text" id="nome">
+        <br>
+        <label for="">Sobrenome: </label>
+        <input type="text" id="sobrenome">
+        <br>
+        <label for="">Idade: </label>
+        <input type="text" id="idade">
+        <br>
+        <label for="">Telefone: </label>
+        <input type="text" id="telefone">
+        <br>
+        <label for="">CPF: </label>
+        <input type="text" id="cpf">
+        <br>
+        <label for="">Gênero: </label>
+        <input type="text" id="gene">
+        <br>
+        <label for="">Sexualidade: </label>
+        <input type="text" id="sexo">
+        <br>
+        <label for="">CEP: </label>
+        <input type="text" id="cep">
+    </div>
+
+    <br>
+    <div class="botao">
+        <button onclick="guardaFormulario()">Enviar</button>
+        <a href="index.html"><button>Home</button></a>
+    </div>
+
+    <div class="print">
+        <table>
+            <tr>
+                <th colspan="2">Formulário</th>
+            </tr>
+            <tr>
+                <th>Nome: </th>
+                <th id="nome1"></th>
+            </tr>
+            <tr>
+                <th>Sobrenome: </th>
+                <th id="sobrenome1"></th>
+            </tr>
+            <tr>
+                <th>Idade: </th>
+                <th id="idade1"></th>
+            </tr>
+            <tr>
+                <th>Telefone: </th>
+                <th id="telefone1"></th>
+            </tr>
+            <tr>
+                <th>CPF: </th>
+                <th id="cpf1"></th>
+            </tr>
+            <tr>
+                <th>Gênero: </th>
+                <th id="gene1"></th>
+            </tr>
+            <tr>
+                <th>Sexualidade: </th>
+                <th id="sexo1"></th>
+            </tr>
+            <tr>
+                <th>CEP: </th>
+                <th id="cep1"></th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="javascript/formulario.js"></script>
+
+</html>

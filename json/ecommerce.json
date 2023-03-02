@@ -1,0 +1,23 @@
+{
+    "stardustcrusaders": {
+        "name": "JBA - Stardust Crusaders",
+        "image": "<img src='imagens/acustico3.jpg' width='250px'>",
+        "album": "End Of The World",
+        "style": "Pop Japones",
+        "price": "US$ 32,19"
+    },
+    "goldenwind": {
+        "name": "JBA - Golden Wind",
+        "image": "<img src='imagens/acustico.jpg' width='250px'>",
+        "album": "Uragirimono no Requiem",
+        "style": "Pop Japones",
+        "price": "US$ 14,91"
+    },
+    "stoneocean": {
+        "name": "JBA - Stone Ocean",
+        "image": "<img src='imagens/acustico2.png' width='250px'>",
+        "album": "Heaven's Falling Down",
+        "style": "Pop Japones",
+        "price": "US$ 19,51"
+    }
+}

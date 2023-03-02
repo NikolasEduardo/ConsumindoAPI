@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fake com JSON</title>
+    <link rel="stylesheet" href="css/ecommerce.css">
+    <link rel="icon" type="imagem/png" href="icones/musica.png" />
+    <link rel="stylesheet" href="css/rolagemsite.css">
+</head>
+
+<body>
+    <h1>E-Commerce Fake API</h1>
+    <button onclick="trocarlingua()" id="linguagem">Original</button>
+    <button onclick="pausarRetomar()" id="pause">Retomar</button>
+    <br><br>
+    <div id="flex">
+        <div id="tamanho">
+            <button onclick="audioPart3()">
+                <div id="imagem1"></div>
+            </button>
+            <div id="nome1"></div>
+            <div id="disco1"></div>
+            <div id="estilo1"></div>
+            <div id="preco1"></div>
+            <a id="compra" href="">Comprar</a>
+        </div>
+        <div id="tamanho">
+            <button onclick="audioPart5()">
+                <div id="imagem2"></div>
+            </button>
+            <div id="nome2"></div>
+            <div id="disco2"></div>
+            <div id="estilo2"></div>
+            <div id="preco2"></div>
+            <a id="compra" href="">Comprar</a>
+        </div>
+        <div id="tamanho">
+            <button onclick="audioPart6()">
+                <div id="imagem3"></div>
+            </button>
+            <div id="nome3"></div>
+            <div id="disco3"></div>
+            <div id="estilo3"></div>
+            <div id="preco3"></div>
+            <a id="compra" href="">Comprar</a>
+        </div>
+    </div>
+    <br>
+    <a href="index.html">Voltar para o HOME</a>
+    <audio id="audioPlayer" controls autoplay></audio>
+</body>
+
+<script src="javascript/ecommerce.js"></script>
+
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+
+div {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div#realoufeiki {
+    margin-top: 15px;
+    background: url(../imagens/essa-api-e-real-confia.jpg);
+    background-size: contain;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+div>p {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 78px;
+}
+
+button {
+    font-size: x-large;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+img {
+    border-radius: 5px;
+}
+
+img#imagemtroca {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    div#realoufeiki {
+        margin-top: 10px;
+        background: url(../imagens/essa-api-e-real-confia.jpg);
+        background-size: contain;
+        width: 300px;
+        height: 230px;
+        border-radius: 6px;
+    }
+
+    div>p {
+        font-size: 27px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        margin-top: 55px;
+    }
+}

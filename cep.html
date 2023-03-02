@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Procurar CEP</title>
+  <link rel="icon" type="imagem/png" href="icones/buscacep.png" />
+  <link rel="stylesheet" href="css/rolagemsite.css">
+  <style>
+    body {
+      background: linear-gradient(90deg,
+          rgb(44, 43, 43) 5%,
+          rgb(0, 0, 0) 59%,
+          rgb(24, 23, 23) 96%);
+    }
+
+    h1,
+    h2 {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    label,
+    .fundo2 {
+      font-size: larger;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    a,
+    a:active,
+    a:hover {
+      color: #ffd700;
+      font-size: larger;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+      margin: 5px;
+      padding: 7px 10px;
+      border-radius: 15px;
+    }
+
+    a:hover {
+      background-color: #ffd700;
+      color: #000000;
+    }
+
+    .centralizar {
+      text-align: center;
+    }
+
+    #fundo1 {
+      background-color: #000000;
+    }
+
+    .fundo2 {
+      background-color: #ffd700;
+      border-radius: 15px;
+      margin: 2px;
+      padding: 5px;
+    }
+
+    #cep,
+    #rua,
+    #numero,
+    #bairro,
+    #cidade,
+    #estado {
+      background-color: #ffd700;
+      border-radius: 15px;
+      margin: 2px;
+      padding: 5px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #primaria {
+      color: #000000;
+    }
+
+    #secundaria {
+      color: #ffd700;
+    }
+
+    .centro {
+      width: 450px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+      border: 5px solid #efa300;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .centro {
+        width: 350px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .centro {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body class="centralizar">
+  <h1 id="secundaria">Cadastro de Usuário</h1>
+  <fieldset class="centro" id="secundaria">
+    <legend>
+      <h2><img src="imagens/icone-localizacao.png" width="100px" alt=""></h2>
+    </legend>
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" autocomplete="off">
+    <br>
+    <label for="rua">Rua:</label>
+    <input type="text" id="rua" readonly>
+    <br>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero">
+    <br>
+    <label for="bairro">Bairro</label>
+    <input type="text" id="bairro" readonly>
+    <br>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" readonly>
+    <br>
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" readonly>
+    <br />
+  </fieldset>
+  <div>
+    <a href="index.html">voltar para a home</a>
+  </div>
+</body>
+<script>
+  const preencherFormulario = (endereco) => {
+    document.getElementById("rua").value = endereco.logradouro;
+    document.getElementById("bairro").value = endereco.bairro;
+    document.getElementById("cidade").value = endereco.localidade;
+    document.getElementById("estado").value = endereco.uf;
+  }
+
+  const cepValido = (cep) => {
+    if (cep.length == 8) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  const pesquisarCep = async () => {
+    const cep = document.getElementById("cep").value;
+    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    if (cepValido(cep)) {
+      const dados = await fetch(url);
+      const endereco = await dados.json();
+      preencherFormulario(endereco);
+    }
+  }
+  document.getElementById("cep").addEventListener("focusout", pesquisarCep);
+</script>
+
+</html>

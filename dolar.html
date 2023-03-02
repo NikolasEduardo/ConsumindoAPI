@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferir o Dólar</title>
+  <link rel="icon" type="imagem/png" href="icones/realdolar.png" />
+  <link rel="stylesheet" href="css/rolagemsite.css">
+  <style>
+    body {
+      background: linear-gradient(90deg,
+          rgb(44, 43, 43) 5%,
+          rgb(0, 0, 0) 59%,
+          rgb(24, 23, 23) 96%);
+      text-align: center;
+    }
+
+    legend>img {
+      margin: 0 5px;
+    }
+
+    h1 {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    a,
+    a:active,
+    a:hover {
+      color: #ffd700;
+      font-size: larger;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-decoration: none;
+      margin: 5px;
+      padding: 7px 10px;
+      border-radius: 15px;
+    }
+
+    a:hover {
+      background-color: #ffd700;
+      color: #000000;
+    }
+
+    label,
+    .fundo1 {
+      font-size: larger;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    .cor1 {
+      color: #ffd700;
+    }
+
+    .fundo1 {
+      background-color: #ffd700;
+      padding: 15px;
+      border-radius: 23px;
+      margin: 5px;
+    }
+
+    .cor2 {
+
+      color: #000000;
+      text-align: center;
+
+    }
+
+    .centro {
+      width: 500px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      border: 5px solid #efa300;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .centro {
+        width: 400px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .centro {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="cor1">CONVERSÃO DE MOEDA</h1>
+  <fieldset class="cor1 centro">
+    <legend><img src="imagens/icone-moeda.png" width="100px" alt=""></legend>
+    <label for="Real">Moeda Real (R$)</label>
+    <input class="fundo1" type="number" id="real" value="1" />
+    <br />
+    <label for="cep">Moeda Dólar ($)</label>
+    <input class="fundo1" type="number" id="dolar" readonly />
+  </fieldset>
+  <div id="dolar">.</div>
+  <div id="timer" class="cor2"></div>
+  <div>
+    <a href="index.html">voltar para a home</a>
+  </div>
+</body>
+<script src="javascript/dolar.js"></script>
+
+</html>

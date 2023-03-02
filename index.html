@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bem-Vindo!</title>
+  <link rel="icon" type="imagem/png" href="icones/home.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <style>
+    body {
+      background: linear-gradient(90deg,
+          rgb(44, 43, 43) 5%,
+          rgb(0, 0, 0) 59%,
+          rgb(24, 23, 23) 96%);
+    }
+
+    * {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .topo {
+      margin-top: 40px;
+      width: 700px;
+      border: #efa300 5px solid;
+      margin-bottom: 35px;
+      border-radius: 25px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .topo>h1,
+    .topo>h3 {
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    .topo>div>div {
+      width: 500px;
+    }
+
+    .baixo {
+      width: 750px;
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    .cep {
+      width: 350px;
+    }
+
+    .dolar {
+      width: 350px;
+    }
+
+    div.carousel-inner {
+      border-radius: 15px;
+    }
+
+    a,
+    a:active,
+    a:hover {
+      color: #252529;
+      background-color: #ffd700;
+      font-size: xx-large;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+      margin: 5px;
+      border-radius: 15px;
+    }
+
+    a:hover {
+      background-color: #252529;
+      color: #ffd700;
+    }
+
+    div>a>div>img {
+      border-radius: 10px;
+      width: 350px;
+    }
+
+    @media (max-width: 800px) {
+      .topo {
+        width: 500px;
+      }
+
+      .topo>div>div {
+        width: 400px;
+      }
+
+      .baixo {
+        width: 510px;
+        display: flex;
+        margin-bottom: 35px;
+      }
+
+      .cep {
+        width: 245px;
+      }
+
+      .dolar {
+        width: 245px;
+      }
+
+      a,
+      a:active,
+      a:hover {
+        font-size: x-large;
+      }
+
+      div>a>div>img {
+        border-radius: 10px;
+        width: 245px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .topo {
+        width: 350px;
+        margin-top: 15px;
+      }
+
+      .topo>div>div {
+        width: 300px;
+      }
+
+      .baixo {
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cep {
+        width: 300px;
+        padding-bottom: 30px;
+      }
+
+      .dolar {
+        width: 300px;
+      }
+
+      a,
+      a:active,
+      a:hover {
+        font-size: x-large;
+      }
+
+      div>a>div>img {
+        border-radius: 10px;
+        width: 300px;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/rolagemsite.css">
+</head>
+
+<body>
+  <div class="topo">
+    <h1>!BEM-VINDO!</h1>
+    <h3>
+      Este Site irá direcionar você para 6 páginas diferentes contendo formas de consumir API.
+      Sendo a API puxada por sites externos, ou uma API Fake puxada por um json interno.
+    </h3>
+    
+  </div>
+  <div class="baixo">
+    <a href="cep.html">
+      <div class="cep">
+        <img src="imagens/CEP.PNG"><br>ir para o Busca-CEP
+      </div>
+    </a>
+    <a href="dolar.html">
+      <div class="dolar">
+        <img src="imagens/Moeda.PNG"><br>ir para o Dólar
+      </div>
+    </a>
+  </div>
+  <div class="baixo">
+    <a href="meme.html">
+      <div class="cep">
+        <img src="imagens/fakeapi.jpg"><br> ir para o Fake API Meme
+      </div>
+    </a>
+    <a href="formulario.html">
+      <div class="dolar">
+        <img src="imagens/Formulario.PNG"><br>ir para o Formulário
+      </div>
+    </a>
+  </div>
+  <div class="baixo">
+    <a href="clima.html">
+      <div class="cep">
+        <img src="imagens/Previsao.PNG"><br>ir para a Previsão de Tempo
+      </div>
+    </a>
+    <a href="ecommerce.html">
+      <div class="dolar">
+        <img src="imagens/eCommerce.PNG"><br>ir para o Fake API Musicas
+      </div>
+    </a>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

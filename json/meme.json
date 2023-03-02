@@ -1,0 +1,50 @@
+{
+    "pessoa1": {
+        "nome": "Luciano Huck",
+        "profissao": "Apresentador",
+        "idade": "51",
+        "imagem": "imagens/luciano-huck.png",
+        "link": "https://pt.wikipedia.org/wiki/Luciano_Huck",
+        "easteregg": "imagens/easter-egg-1.jpg"
+    },
+    "pessoa2": {
+        "nome": "Rainha Elizabeth",
+        "profissao": "Rainha",
+        "idade": "+8000",
+        "imagem": "imagens/rainha-elizabeth-eterna.jpg",
+        "link": "https://pt.wikipedia.org/wiki/Isabel_II_do_Reino_Unido",
+        "easteregg": "imagens/easter-egg-2.jpg"
+    },
+    "pessoa3": {
+        "nome": "Ash Ketchum",
+        "profissao": "Treinador de Pokémon",
+        "idade": "10",
+        "imagem": "imagens/ash-ketchum.png",
+        "link": "https://pokemon.fandom.com/pt-br/wiki/Ash_Ketchum",
+        "easteregg": "imagens/easter-egg-3.jpg"
+    },
+    "pessoa4": {
+        "nome": "Tanjirō Kamado",
+        "profissao": "Caçador de Oni",
+        "idade": "15",
+        "imagem": "imagens/tanjiro-kamado.jpg",
+        "link": "https://subanimes.cc/anime/kimetsu-no-yaiba-demon-slayer-dublado-hd-v4/",
+        "easteregg": "imagens/easter-egg-4.jpg"
+    },
+    "pessoa5": {
+        "nome": "Legoshi",
+        "profissao": "Estudante",
+        "idade": "17",
+        "imagem": "imagens/legoshi.jpg",
+        "link": "https://subanimes.cc/anime/beastars-dublado/",
+        "easteregg": "imagens/easter-egg-5.gif"
+    },
+    "pessoa6": {
+        "nome": "Izuku Midoriya",
+        "profissao": "Herói",
+        "idade": "16",
+        "imagem": "imagens/izuku-midoriya.png",
+        "link": "https://subanimes.cc/anime/boku-no-hero-academia-1a-temporada-dublado/",
+        "easteregg": "imagens/easter-egg-6.gif"
+    }
+}

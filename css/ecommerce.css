@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    font-size: x-large;
+    background: linear-gradient(90deg,
+            rgb(44, 43, 43) 5%,
+            rgb(0, 0, 0) 59%,
+            rgb(24, 23, 23) 96%);
+    color: #ffd700;
+}
+
+a,
+a:active,
+a:hover,
+button#linguagem,
+button#pause {
+    color: #ffd700;
+    background-color: #00000000;
+    border: none;
+    font-size: larger;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 5px;
+    padding: 7px 10px;
+    border-radius: 15px;
+}
+
+a:hover,
+button#linguagem:hover,
+button#pause:hover {
+    background-color: #ffd700;
+    color: #000000;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+#tamanho {
+    width: 33%;
+}
+
+#flex {
+    display: flex;
+}
+
+img {
+    border: 5px solid;
+    border-radius: 5px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+img:hover {
+    border: 5px solid #ffd700;
+    ;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+button:not(#linguagem, #pause) {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+audio {
+    display: none;
+}
+
+#compra{
+    padding: 4px 6px;
+    padding-top: 2px;
+    margin-top: 7px;
+}
+
+@media (max-width: 900px) {
+    #flex {
+        flex-direction: column;
+    }
+
+    #tamanho {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
